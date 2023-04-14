@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<head>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        
+        body {
+            background-color: white;
+            color: black;
+            border: 10px solid green;
+            border-radius: 20px;
+            padding: 10px;
+        }
+    </style>
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <!......Survey Form testing on html form elements...>
+    <h1>Customer Satisfaction Survey</h1>
+    <p>Thank you for taking time to provide feedback.We appreciate hearing from you and will review your comment carefully.</p>
+    <hr>
+    <form action="/action_page.php" method="get">
+        <p>How long have you been used our product/services?</p><br>
+        <input type="radio" id="Less than a month" name="H_long" value="Less than a month">
+        <label for="Less than a month">Less than a month</label><br>
+        <input type="radio" id="1-6 months" name="H_long" value="1-6 months" required>
+        <label for="1-6 months">1-6 months</label><br>
+        <input type="radio" id="1-3 years" name="H_long" value="1-3 years" required>
+        <label for="1-3 years">1-3 years</label><br>
+        <input type="radio" id="Over 3 years" name="H_long" value="Over 3 years" required>
+        <label for="Over 3 years">Over 3 years</label><br>
+        <input type="radio" id="Never used" name="H_long" value="Never used" required>
+        <label for="Never used">Never used</label>
+        <br>
+        <p>How satisfied were you with the product/services?</p><br>
+        <input type="radio" id="Very Satisfied" name="H_sat" value="Very Satisfied" required>
+        <label for="Very Satisfied">Very Satisfied</label><br>
+        <input type="radio" id="Satisfied" name="H_sat" value="Satisfied" required>
+        <label for="Satisfied">Satisfied</label><br>
+        <input type="radio" id="Unsatisfied" name="H_sat" value="Unsatisfied" required>
+        <label for="">Unsatisfied</label><br>
+        <input type="radio" id="Neutral" name="H_sat" value="Neutral">
+        <label for="Neutral">Neutral</label>
+        <br>
+        <p>What impressed you most about the product/services?</p><br>
+        <input type="radio" id="Quality" name="H_im" value="Quality" required>
+        <label for="Quality">Quality</label><br>
+        <input type="radio" id="Price" name="H_im" value="Price" required>
+        <label for="Price">Price</label><br>
+        <input type="radio" id="Customer Service" name="H_im" value="Customer Service" required>
+        <label for="Customer Service">Customer Service</label><br>
+        <input type="radio" id="Usability" name="H_im" value="Usability" required>
+        <label for="Usability">Usability</label>
+        <br>
+        <p>Would you use our product/service in the future?</p><br>
+        <input type="radio" id="Definitely" name="W_use" value="Definitely" required>
+        <label for="Definitely">Definitely</label><br>
+        <input type="radio" id="Probably" name="W_use" value="Probably" required>
+        <label for="Probably">Probably</label><br>
+        <input type="radio" id="Not Sure" name="W_use" value="Not Sure" required>
+        <label for="Not Sure">Not Sure</label><br>
+        <input type="radio" id="Definitely Not" name="W_use" value="Definitely Not" required>
+        <label for="Definitely Not">Definitely Not</label>
+        <br>
+        <p>Thinking of similar products/services offered by other companies.how would you compare the product/service offered by our company?</p><br>
+        <input type="radio" id="Much Better" name="th_" value="Much Better" required>
+        <label for="Much Better">Much Better</label><br>
+        <input type="radio" id="Somewhat Better" name="th_" value="Somewhat Better" required>
+        <label for="Somewhat Better">Somewhat Better</label><br>
+        <input type="radio" id="About the Same" name="th_" value="About the Same" required>
+        <label for="About the Same">About the Same</label><br>
+        <input type="radio" id="Don't Know" name="th_" value="Don't Know" required>
+        <label for="Don't Know">Don't Know</label>
+        <br>
+        <p>Do you have any Suggestions to improve our product/services</p><br>
+        <textarea name="message" row="12" col="30" maxlength="190" size="190" required></textarea>
+        <br>
+        <p>Please leave your email address if you would like us to contact you regarding any questions.</p><br>
+
+        <label for="E_mail">Email Address</label>
+        <input type="text" id="E_mail" name="email_add" maxlength="30" size="30" required><br><br>
+        <input type="Submit" value="Submit" style="background-color: blue;">
+
+    </form><br>
+    <p style="font-size: bold;">Author:Nicolas og</p><br>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
